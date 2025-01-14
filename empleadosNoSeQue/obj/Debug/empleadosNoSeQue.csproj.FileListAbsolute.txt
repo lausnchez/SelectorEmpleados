@@ -1,0 +1,15 @@
+C:\Users\laura.sanchez\Desktop\GraficosWPF\empleadosNoSeQue\empleadosNoSeQue\bin\Debug\empleadosNoSeQue.exe.config
+C:\Users\laura.sanchez\Desktop\GraficosWPF\empleadosNoSeQue\empleadosNoSeQue\bin\Debug\empleadosNoSeQue.exe
+C:\Users\laura.sanchez\Desktop\GraficosWPF\empleadosNoSeQue\empleadosNoSeQue\bin\Debug\empleadosNoSeQue.pdb
+C:\Users\laura.sanchez\Desktop\GraficosWPF\empleadosNoSeQue\empleadosNoSeQue\obj\Debug\empleadosNoSeQue.csproj.AssemblyReference.cache
+C:\Users\laura.sanchez\Desktop\GraficosWPF\empleadosNoSeQue\empleadosNoSeQue\obj\Debug\MainWindow.g.cs
+C:\Users\laura.sanchez\Desktop\GraficosWPF\empleadosNoSeQue\empleadosNoSeQue\obj\Debug\App.g.cs
+C:\Users\laura.sanchez\Desktop\GraficosWPF\empleadosNoSeQue\empleadosNoSeQue\obj\Debug\empleadosNoSeQue_MarkupCompile.cache
+C:\Users\laura.sanchez\Desktop\GraficosWPF\empleadosNoSeQue\empleadosNoSeQue\obj\Debug\empleadosNoSeQue_MarkupCompile.lref
+C:\Users\laura.sanchez\Desktop\GraficosWPF\empleadosNoSeQue\empleadosNoSeQue\obj\Debug\MainWindow.baml
+C:\Users\laura.sanchez\Desktop\GraficosWPF\empleadosNoSeQue\empleadosNoSeQue\obj\Debug\empleadosNoSeQue.g.resources
+C:\Users\laura.sanchez\Desktop\GraficosWPF\empleadosNoSeQue\empleadosNoSeQue\obj\Debug\empleadosNoSeQue.Properties.Resources.resources
+C:\Users\laura.sanchez\Desktop\GraficosWPF\empleadosNoSeQue\empleadosNoSeQue\obj\Debug\empleadosNoSeQue.csproj.GenerateResource.cache
+C:\Users\laura.sanchez\Desktop\GraficosWPF\empleadosNoSeQue\empleadosNoSeQue\obj\Debug\empleadosNoSeQue.csproj.CoreCompileInputs.cache
+C:\Users\laura.sanchez\Desktop\GraficosWPF\empleadosNoSeQue\empleadosNoSeQue\obj\Debug\empleadosNoSeQue.exe
+C:\Users\laura.sanchez\Desktop\GraficosWPF\empleadosNoSeQue\empleadosNoSeQue\obj\Debug\empleadosNoSeQue.pdb
