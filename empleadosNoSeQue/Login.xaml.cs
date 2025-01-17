@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,19 +20,38 @@ namespace empleadosNoSeQue
     /// </summary>
     public partial class Login : Window
     {
+        private StreamWriter sw;
+        private StreamReader sr;
+        private String nombreFichero = "usuarios.txt";
+        private Cifrado cypher = new Cifrado();
+
         public Login()
         {
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void btn_registro_Click(object sender, RoutedEventArgs e)
         {
-
+            
+            sw = new StreamWriter(nombreFichero, true);
+            String usuario = cypher.cifrar(txt_usuario.Text);
+            String clave = cypher.cifrar(txt_clave.Text);
+            sw.WriteLine(usuario);
+            sw.WriteLine(clave);
+            sw.Close();
+            MessageBox.Show("Se ha agregado el usuario " + txt_usuario.Text + " con éxito");
+            txt_usuario.Text = "";
+            txt_clave.Text = "";
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private void btn_entrar_Click(object sender, RoutedEventArgs e)
         {
-
+            sr = new StreamReader(nombreFichero, true);
+            String linea = "";
+            while ((linea = sr.ReadLine()) != null)
+            {
+                
+            }
         }
     }
 }

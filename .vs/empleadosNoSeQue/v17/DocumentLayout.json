@@ -15,7 +15,7 @@
       "RelativeMoniker": "D:0:0:{6880AB4F-5C09-4F24-B9A4-F6F3D52A27C7}|empleadosNoSeQue\\empleadosNoSeQue.csproj|solutionrelative:empleadosnoseque\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6880AB4F-5C09-4F24-B9A4-F6F3D52A27C7}|empleadosNoSeQue\\empleadosNoSeQue.csproj|c:\\users\\laura.sanchez\\desktop\\selectorempleados\\empleadosnoseque\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6880AB4F-5C09-4F24-B9A4-F6F3D52A27C7}|empleadosNoSeQue\\empleadosNoSeQue.csproj|C:\\Users\\laura.sanchez\\Desktop\\SelectorEmpleados\\empleadosnoseque\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6880AB4F-5C09-4F24-B9A4-F6F3D52A27C7}|empleadosNoSeQue\\empleadosNoSeQue.csproj|solutionrelative:empleadosnoseque\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -36,7 +36,7 @@
               "RelativeDocumentMoniker": "empleadosNoSeQue\\Login.xaml.cs",
               "ToolTip": "C:\\Users\\laura.sanchez\\Desktop\\SelectorEmpleados\\empleadosNoSeQue\\Login.xaml.cs",
               "RelativeToolTip": "empleadosNoSeQue\\Login.xaml.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAQwCEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABoAAAAAAAAAAAAgwDQAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-17T19:27:18.873Z",
               "EditorCaption": ""
@@ -63,8 +63,7 @@
               "RelativeToolTip": "empleadosNoSeQue\\MainWindow.xaml.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-15T15:53:03.397Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-15T15:53:03.397Z"
             },
             {
               "$type": "Document",
