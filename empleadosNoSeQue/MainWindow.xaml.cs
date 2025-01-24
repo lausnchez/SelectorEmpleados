@@ -20,9 +20,10 @@ namespace empleadosNoSeQue
     /// </summary>
     public partial class MainWindow : Window
     {
-        public MainWindow()
+        public MainWindow(String usuario)
         {
             InitializeComponent();
+            lbl_nombreUsuario.Content = usuario;
         }
 
         private void btn_leerTodos_Click(object sender, RoutedEventArgs e)
