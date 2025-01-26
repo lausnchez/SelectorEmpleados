@@ -37,17 +37,17 @@ namespace empleadosNoSeQue
 
             if (comprobarCampos())
             {
-                if (!buscarUsuario(txt_usuario.Text, txt_clave.Text))
+                if (!buscarUsuario(txt_usuario.Text, txt_clave.Password))
                 {
                     sw = new StreamWriter(nombreFichero, true);
                     String usuario = cypher.cifrar(txt_usuario.Text);
-                    String clave = cypher.cifrar(txt_clave.Text);
+                    String clave = cypher.cifrar(txt_clave.Password);
                     sw.WriteLine(usuario);
                     sw.WriteLine(clave);
                     sw.Close();
                     MessageBox.Show("Se ha agregado el usuario " + txt_usuario.Text + " con éxito");
                     txt_usuario.Text = "";
-                    txt_clave.Text = "";
+                    txt_clave.Password = "";
                 }
                 else MessageBox.Show("Usuario no válido");
             }
@@ -120,7 +120,7 @@ namespace empleadosNoSeQue
 
         private Boolean comprobarCoincidencia(String usuario, String clave)
         {
-            if (txt_usuario.Text.Equals(usuario) && txt_clave.Text.Equals(clave))
+            if (txt_usuario.Text.Equals(usuario) && txt_clave.Password.Equals(clave))
             {
                 return true;
             }else return false;
@@ -129,7 +129,7 @@ namespace empleadosNoSeQue
         private Boolean comprobarCampos()
         {
             Boolean valido = true;
-            if (txt_clave.Text.Trim().Length == 0)
+            if (txt_clave.Password.Trim().Length == 0)
             {
                 valido = false;
             }
