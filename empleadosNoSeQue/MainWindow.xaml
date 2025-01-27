@@ -28,9 +28,9 @@
                             </Grid.ColumnDefinitions>
                             <Image 
                                 Grid.Column="0" 
-                                Source="imagenes/placeholder.jpg"
                                 Margin="5,5,20,5"
                                 Height="65" Width="65"
+                                Source="{Binding urlFoto}"
                             />
                             <StackPanel Grid.Column="1" VerticalAlignment="Center">
                                 <TextBlock FontWeight="Bold" Text="{Binding ID}" FontFamily="Bahnschrift"/>
@@ -65,7 +65,7 @@
                 />
                 <Button 
                     x:Name="btn_eliminar"
-                    Content="Eliminar"
+                    Content="Eliminar usuario"
                     HorizontalAlignment="Left" 
                     Height="45" 
                     VerticalAlignment="Top" 

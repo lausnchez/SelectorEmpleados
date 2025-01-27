@@ -62,6 +62,7 @@ namespace empleadosNoSeQue
                 String linea = "";
                 String usuario = "";
                 String clave = "";
+                Boolean encontrado = false;
                 int counter = 0;
 
                 while ((linea = sr.ReadLine()) != null)
@@ -77,6 +78,7 @@ namespace empleadosNoSeQue
                         // Si coinciden
                         if (comprobarCoincidencia(usuario, clave))
                         {
+                            encontrado = true;
                             MainWindow nuevaVentana = new MainWindow(usuario);
                             nuevaVentana.Show();
                             this.Close();
@@ -89,7 +91,9 @@ namespace empleadosNoSeQue
                     }
                     counter++;
                 }
-            }
+                if (encontrado == false) MessageBox.Show("Error al iniciar sesión");
+                sr.Close();
+            }          
             else MessageBox.Show("Faltan campos por rellenar");
         }
 
@@ -115,6 +119,7 @@ namespace empleadosNoSeQue
                 }
                 counter++;
             }
+            sr.Close();
             return false;
         }
 

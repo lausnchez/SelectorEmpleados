@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "D:\\AndroidStudio\\SelectorEmpleados\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6880AB4F-5C09-4F24-B9A4-F6F3D52A27C7}|empleadosNoSeQue\\empleadosNoSeQue.csproj|d:\\androidstudio\\selectorempleados\\empleadosnoseque\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6880AB4F-5C09-4F24-B9A4-F6F3D52A27C7}|empleadosNoSeQue\\empleadosNoSeQue.csproj|D:\\AndroidStudio\\SelectorEmpleados\\empleadosnoseque\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6880AB4F-5C09-4F24-B9A4-F6F3D52A27C7}|empleadosNoSeQue\\empleadosNoSeQue.csproj|solutionrelative:empleadosnoseque\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6880AB4F-5C09-4F24-B9A4-F6F3D52A27C7}|empleadosNoSeQue\\empleadosNoSeQue.csproj|D:\\AndroidStudio\\SelectorEmpleados\\empleadosnoseque\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6880AB4F-5C09-4F24-B9A4-F6F3D52A27C7}|empleadosNoSeQue\\empleadosNoSeQue.csproj|solutionrelative:empleadosnoseque\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6880AB4F-5C09-4F24-B9A4-F6F3D52A27C7}|empleadosNoSeQue\\empleadosNoSeQue.csproj|d:\\androidstudio\\selectorempleados\\empleadosnoseque\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{6880AB4F-5C09-4F24-B9A4-F6F3D52A27C7}|empleadosNoSeQue\\empleadosNoSeQue.csproj|solutionrelative:empleadosnoseque\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{6880AB4F-5C09-4F24-B9A4-F6F3D52A27C7}|empleadosNoSeQue\\empleadosNoSeQue.csproj|d:\\androidstudio\\selectorempleados\\empleadosnoseque\\login.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6880AB4F-5C09-4F24-B9A4-F6F3D52A27C7}|empleadosNoSeQue\\empleadosNoSeQue.csproj|solutionrelative:empleadosnoseque\\login.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +26,20 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
+              "Title": "Login.xaml.cs",
+              "DocumentMoniker": "D:\\AndroidStudio\\SelectorEmpleados\\empleadosNoSeQue\\Login.xaml.cs",
+              "RelativeDocumentMoniker": "empleadosNoSeQue\\Login.xaml.cs",
+              "ToolTip": "D:\\AndroidStudio\\SelectorEmpleados\\empleadosNoSeQue\\Login.xaml.cs",
+              "RelativeToolTip": "empleadosNoSeQue\\Login.xaml.cs",
+              "ViewState": "AgIAAHsAAAAAAAAAAAAuwF0AAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-27T11:37:03.505Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "D:\\AndroidStudio\\SelectorEmpleados\\empleadosNoSeQue\\MainWindow.xaml",
               "RelativeDocumentMoniker": "empleadosNoSeQue\\MainWindow.xaml",
@@ -34,13 +51,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "D:\\AndroidStudio\\SelectorEmpleados\\empleadosNoSeQue\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "empleadosNoSeQue\\MainWindow.xaml.cs",
               "ToolTip": "D:\\AndroidStudio\\SelectorEmpleados\\empleadosNoSeQue\\MainWindow.xaml.cs",
               "RelativeToolTip": "empleadosNoSeQue\\MainWindow.xaml.cs",
-              "ViewState": "AgIAALEAAAAAAAAAAAAIwLsAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAADIAAAAAAAAAAAAkwE8AAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-25T12:37:37.114Z",
               "EditorCaption": ""

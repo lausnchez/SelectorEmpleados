@@ -28,6 +28,7 @@ namespace empleadosNoSeQue
         StreamWriter sw = null;
         StreamReader sr = null;
         List<Empleado> listaEmpleados = new List<Empleado>();
+        String urlActual = "";
 
         public MainWindow(String usuario)
         {
@@ -40,7 +41,7 @@ namespace empleadosNoSeQue
             public int ID {  get; set; }
             public String Nombre {  get; set; }
             public String Apellidos {  get; set; }
-            public String Telefono {  get; set; }
+            public String Tlf {  get; set; }
             public String urlFoto {  get; set; }
 
             public Empleado(int id, String nombre, String apellidos, String tlf, String urlFoto)
@@ -48,7 +49,7 @@ namespace empleadosNoSeQue
                 this.ID = id;
                 this.Nombre = nombre;
                 this.Apellidos = apellidos;
-                this.Telefono = tlf;
+                this.Tlf = tlf;
                 this.urlFoto = urlFoto;
             }
         }
@@ -72,13 +73,16 @@ namespace empleadosNoSeQue
                     // Escribir en el fichero
                     sw = new StreamWriter(nombreFichero,true);
 
-                    String urlImagen = img_empleado.Source.ToString().Substring(8);
 
                     sw.WriteLine(txt_id.Text);
                     sw.WriteLine(txt_nombre.Text);
                     sw.WriteLine(txt_apellidos.Text);
-                    sw.WriteLine(txt_tlf.Text);
-                    sw.WriteLine(urlImagen);
+                    sw.WriteLine(txt_tlf.Text); 
+                    if (urlActual != "")
+                    {
+                        sw.WriteLine(urlActual);
+                    }
+                    else sw.WriteLine("imagenes/placeholder.jpg");
 
                     sw.Close();
 
@@ -104,17 +108,44 @@ namespace empleadosNoSeQue
             {
                 img_empleado.Source = new BitmapImage(new Uri(dialog.FileName));
             }
+            this.urlActual = dialog.FileName;
         }
 
         private void btn_eliminar_Click(object sender, RoutedEventArgs e)
         {
-            if (listBox_empleados.SelectedItem != null)
+            Login nuevoLogin = new Login();
+            nuevoLogin.Show();
+            this.Close();
+
+            eliminarUsuarioDelFichero(lbl_nombreUsuario.Content.ToString());
+        }
+
+        private void eliminarUsuarioDelFichero(String usuarioBorrar)
+        {
+            String linea = "";
+            sr = new StreamReader("usuarios.txt");
+            StreamWriter swNuevo = new StreamWriter("usuariosNuevo.txt");
+            String usuarioCifrado = new Cifrado().cifrar(usuarioBorrar);
+
+            while ((linea = sr.ReadLine()) != null)
             {
-                listBox_empleados.ItemsSource = null;
-                listaEmpleados.Remove((Empleado)listBox_empleados.SelectedItem);
-                listBox_empleados.ItemsSource = listaEmpleados;
+                // Cuando encuentre el usuario
+                if (!usuarioCifrado.Equals(linea))
+                {
+                    swNuevo.WriteLine(linea);
+                    swNuevo.WriteLine(sr.ReadLine());
+                }
+                else sr.ReadLine(); // Para saltarnos la clave del usuario a borrar            
             }
-            else MessageBox.Show("Debe seleccionar un empleado");
+            swNuevo.Close();
+            sr.Close();
+
+            if (File.Exists("usuarios.txt"))
+            {
+                File.Delete("usuarios.txt");
+                System.IO.File.Move("usuariosNuevo.txt", "usuarios.txt");
+                MessageBox.Show("Se ha eliminado al usuario " + usuarioBorrar + " con éxito");
+            }
         }
 
         /**
@@ -160,19 +191,18 @@ namespace empleadosNoSeQue
 
             while ((linea = sr.ReadLine()) != null)
             {
-                // LINEA DE ID
-                if (contador%5 == 0)
+                if (idIngresado.Equals(linea))
                 {
-                    if (idIngresado.Equals(linea))
-                    {
-                        valido = false;
-                    }
-                    sr.ReadLine();  // Nombre
-                    sr.ReadLine();  // Apellidos
-                    sr.ReadLine();  // Telefono
-                    sr.ReadLine();  // Imagen
+                    valido = false;
                 }
-                contador+=4;
+
+                for (int i = 0; i < 4; i++)
+                {
+                    if (sr.ReadLine() == null)
+                    {
+                        break;
+                    }
+                }
             }
             sr.Close();
             if (!valido)
